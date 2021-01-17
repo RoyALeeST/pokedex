@@ -9,10 +9,10 @@ import { CommonModule } from '@angular/common';
   // Custom
   import { HomeRoutingModule } from '../../router/home/home-routing.module';
 
-
 // Components
 @NgModule({
   declarations: [  
+    
   ],
   imports: [
     HomeRoutingModule,
