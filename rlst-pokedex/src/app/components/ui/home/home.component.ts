@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  notifyOfPokemonFound(pokemonData: any){
+    console.log(pokemonData)
+  }
+
 }
