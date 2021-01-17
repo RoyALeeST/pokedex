@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'rlst-pokemon-list',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PokemonListComponent implements OnInit {
 
+  @Input() pokemonData;
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

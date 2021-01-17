@@ -23,7 +23,7 @@ export class SearchBarComponent implements OnInit {
     console.log(this.pokemonName)
     this.searchService.searchPokemon(this.pokemonName).subscribe(
       (foundPokemonData)=>{
-        console.log(foundPokemonData);
+        console.log(foundPokemonData)
         this.searchEventEmitter.emit(foundPokemonData);
       },
       (error)=>{
