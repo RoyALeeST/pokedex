@@ -9,7 +9,6 @@ import { SearchService } from 'src/app/services/search/search.service';
 })
 export class SearchBarComponent implements OnInit {
 
-  @Output() searchEventEmitter = new EventEmitter<any>();
   pokemonName:String;
 
   constructor(private searchService: SearchService) {
@@ -20,12 +19,9 @@ export class SearchBarComponent implements OnInit {
   }
 
   searchPokemon() {
-    console.log(this.pokemonName)
-    this.searchService.searchPokemon(this.pokemonName).subscribe(
-      (foundPokemonData)=>{
-        console.log(foundPokemonData)
-        this.searchEventEmitter.emit(foundPokemonData);
-      },
+    this.searchService.searchPokemon(this.pokemonName)
+    .subscribe(
+      ()=>{},
       (error)=>{
         console.error(error)
       },

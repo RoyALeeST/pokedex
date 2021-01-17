@@ -7,7 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PokemonCardComponent implements OnInit {
 
-  @Input() pokemonData;
+  @Input() pokemonData: any;
+  @Input() shiny: boolean;
+
+
   constructor() { }
 
   ngOnInit(): void {

@@ -9,13 +9,18 @@ import { catchError, map, retry, tap } from 'rxjs/operators';
 export class SearchService {
 
   readonly POKE_BASE_URL = "https://pokeapi.co/api/v2/";
+  // eventemitter for pokemon found
+  private newPokemonSearched = new Subject<any>();
+  newPokemonSearched$ = this.newPokemonSearched.asObservable();
 
   constructor(private http: HttpClient) { }
 
   searchPokemon(pokemonName: String): Observable<any> {
     return this.http.get<any>(this.POKE_BASE_URL + "pokemon/" + pokemonName)  
     .pipe(
-      tap(_ => console.log(`fetched pokemon id=${pokemonName}`)),
+      tap(response => {
+        this.newPokemonSearched.next(response);
+      }),
       catchError(this.handleError)
     )
   }

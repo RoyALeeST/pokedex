@@ -1,8 +1,18 @@
 <div class="card">
-    <div class="card__face card__face--front">
-    <img src={{pokemonData.sprites.front_default}} />
+    <div *ngIf="pokemonData != null" class="card__face card__face--front">
+        <div *ngIf="shiny; else normalSprite">        
+            <img src={{pokemonData.sprites.front_shiny}} />
+        </div>
+        <ng-template #normalSprite>
+            <img src={{pokemonData.sprites.front_default}} />
+        </ng-template>
     </div>
-    <div class="card__face card__face--back">
-    <img src={{pokemonData.sprites.back_default}} />
+    <div *ngIf="pokemonData != null" class="card__face card__face--back">
+        <div *ngIf="shiny; else normalBackSprite">        
+            <img src={{pokemonData.sprites.back_shiny}} />
+        </div>
+        <ng-template #normalBackSprite>
+            <img src={{pokemonData.sprites.back_default}} />
+        </ng-template>
     </div>
 </div>
