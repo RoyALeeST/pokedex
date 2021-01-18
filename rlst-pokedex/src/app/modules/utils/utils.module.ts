@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 import { PokemonListComponent } from '../../components/ui/utils/listing/pokemon-list/pokemon-list.component';
@@ -21,6 +22,7 @@ import { PokemonInfoRightComponent } from '../../components/ui/listing/pokemon-i
       CommonModule,
       RouterModule,
       FormsModule,
+      NgbModule,
     ],
     exports: [
       PokemonListComponent,

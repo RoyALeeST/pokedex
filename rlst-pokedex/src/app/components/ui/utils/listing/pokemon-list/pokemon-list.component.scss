@@ -14,11 +14,9 @@
 }
 
   
-  .scene {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    perspective: 800px;
-
-  }
-  
+.scene {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  perspective: 800px;
+}

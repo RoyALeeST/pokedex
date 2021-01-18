@@ -14,7 +14,6 @@ export class PokemonListComponent implements OnInit, OnDestroy {
 
   constructor(private searchService: SearchService) {
     this.subscription = this.searchService.newPokemonSearched$.subscribe((pokemonData)=>{
-      console.log(pokemonData)
       this.pokemonData = pokemonData;
     })
    }
