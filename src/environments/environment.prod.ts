@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  CHROME_BIN: "/usr/bin/google-chrome"
 };
+
