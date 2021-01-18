@@ -3,8 +3,13 @@
         <rlst-pokemon-info-left></rlst-pokemon-info-left>
     </div>
     <div class="scene" id="normal-sprite">
-        <rlst-pokemon-card [pokemonData]="pokemonData"></rlst-pokemon-card>
-        <rlst-pokemon-card [pokemonData]="pokemonData" [shiny]="true"></rlst-pokemon-card>
+        <div class="scene-top-container">
+            <rlst-pokemon-card [pokemonData]="pokemonData"></rlst-pokemon-card>
+            <rlst-pokemon-card [pokemonData]="pokemonData" [shiny]="true"></rlst-pokemon-card>
+        </div>
+        <div class="scene-top-container">
+            <rlst-pokemon-description></rlst-pokemon-description>
+        </div>
     </div>
     <div class="pokemon-info-right">
         <rlst-pokemon-info-right></rlst-pokemon-info-right>

@@ -9,6 +9,7 @@ import { PokemonListComponent } from '../../components/ui/utils/listing/pokemon-
 import { PokemonCardComponent } from '../../components/ui/utils/listing/pokemon-list/pokemon-card/pokemon-card.component';
 import { PokemonInfoLeftComponent } from '../../components/ui/listing/pokemon-info-left/pokemon-info-left.component';
 import { PokemonInfoRightComponent } from '../../components/ui/listing/pokemon-info-right/pokemon-info-right.component';
+import { PokemonDescriptionComponent } from '../../components/ui/utils/pokemon-description/pokemon-description.component';
 
 // Components
 @NgModule({
@@ -17,6 +18,7 @@ import { PokemonInfoRightComponent } from '../../components/ui/listing/pokemon-i
         PokemonCardComponent,
         PokemonInfoLeftComponent,
         PokemonInfoRightComponent,
+        PokemonDescriptionComponent,
     ],
     imports: [
       CommonModule,

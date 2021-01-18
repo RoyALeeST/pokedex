@@ -13,6 +13,10 @@ export class SearchService {
   private newPokemonSearched = new Subject<any>();
   newPokemonSearched$ = this.newPokemonSearched.asObservable();
 
+    // eventemitter for pokemon POKEDEX ENTRY found
+    private newPokemonPokedexEntrySearched = new Subject<any>();
+    newPokemonPokedexEntrySearched$ = this.newPokemonPokedexEntrySearched.asObservable();
+
   constructor(private http: HttpClient) { }
 
   searchPokemon(pokemonName: String): Observable<any> {
@@ -20,6 +24,19 @@ export class SearchService {
     .pipe(
       tap(response => {
         this.newPokemonSearched.next(response);
+        this.searchPokemonPokedexEntry(response.id);
+      }),
+      catchError(this.handleError)
+    )
+  }
+
+  searchPokemonPokedexEntry(pokemonID: number): Observable<any> {
+    console.log("pokedex entry search")
+    return this.http.get<any>(this.POKE_BASE_URL + "pokemon-species/" + pokemonID)  
+    .pipe(
+      tap(response => {
+        console.log("pokedex entry end")
+        this.newPokemonPokedexEntrySearched.next(response);
       }),
       catchError(this.handleError)
     )
