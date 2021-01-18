@@ -1,4 +1,5 @@
 <div *ngIf="stats.length > 0" id="stats-container">
+    <h1>STATS</h1>
     <div *ngFor="let stat of stats">
         <h3 class="stat-name">{{stat.stat.name | titlecase}}</h3>
         <ngb-progressbar type="success" [value]="stat.base_stat">{{stat.base_stat}}</ngb-progressbar>

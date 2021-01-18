@@ -10,7 +10,7 @@ import { SearchService } from 'src/app/services/search/search.service';
 export class PokemonDescriptionComponent implements OnInit {
 
   subscription: Subscription;
-  pokedexEntry: String = "";
+  pokedexEntry: String = null;
 
   constructor(private searchService: SearchService) { 
     this.subscription = this.searchService.newPokemonSearched$.subscribe((pokemonData) => {
