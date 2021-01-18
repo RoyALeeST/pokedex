@@ -1,6 +1,6 @@
 <div id="movements-container" *ngIf="moves.length > 0">
     <h1>Can Learn</h1>
     <ol class="gradient-list">
-        <li *ngFor="let move of moves">{{move.move.name}}</li>
+        <li *ngFor="let move of moves">{{move.move.name | titlecase}} -  Lvl. {{move.version_group_details[0].level_learned_at}}</li>
     </ol>
 </div>

@@ -18,8 +18,8 @@ export class PokemonInfoRightComponent implements OnInit, OnDestroy {
   constructor(private searchService: SearchService,
                       config: NgbProgressbarConfig) {
     this.searchService.newPokemonSearched$.subscribe((pokemonData)=>{
+      console.log(pokemonData)
       this.stats = pokemonData.stats;
-      console.log(this.stats)
     })
 
     config.max = 255;
