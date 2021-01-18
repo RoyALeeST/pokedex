@@ -1,0 +1,6 @@
+<div id="stats-container">
+    <div *ngFor="let stat of stats">
+        <h3>{{stat.stat.name | titlecase}}</h3>
+        <ngb-progressbar type="success" [value]="stat.base_stat">{{stat.base_stat}}</ngb-progressbar>
+    </div>
+</div>

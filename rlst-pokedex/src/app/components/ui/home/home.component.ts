@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  pokemonData: any;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  notifyOfPokemonFound(pokemonData: any){
+    this.pokemonData = pokemonData
   }
 
 }
