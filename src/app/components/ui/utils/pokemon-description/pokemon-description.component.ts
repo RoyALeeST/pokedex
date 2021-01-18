@@ -19,7 +19,6 @@ export class PokemonDescriptionComponent implements OnInit {
 
         let result = pokedexEntry.flavor_text_entries.find(entry => {          
           if(entry.language.name == "en"){
-            console.log(entry.flavor_text)
             return true;
           }
         })

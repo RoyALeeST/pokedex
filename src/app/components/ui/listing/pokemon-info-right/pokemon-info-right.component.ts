@@ -17,7 +17,7 @@ export class PokemonInfoRightComponent implements OnInit, OnDestroy {
 
   constructor(private searchService: SearchService,
                       config: NgbProgressbarConfig) {
-    this.searchService.newPokemonSearched$.subscribe((pokemonData)=>{
+    this.subscription = this.searchService.newPokemonSearched$.subscribe((pokemonData)=>{
       this.stats = pokemonData.stats;
     })
 
