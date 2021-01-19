@@ -9,6 +9,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 You can take a look at the DEMO on this url -> [Pokedex Showcase](https://rlst-pokedex.herokuapp.com/)
 
+To begin tou will see a page like this ![Pokedex_main](/images/empty_app.PNG)
+
 ### Prerequisites
 Basic understanding of CSS and HTML, and good Javascript skills are a plus but not a must.
 
