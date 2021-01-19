@@ -47,6 +47,8 @@ ng test
 
 It requires a push to the "main" branch where the CI/CD takes place, it will run tests on the server after building the app. Then, the deployment will be done automatically from my Heroku Server.
 
+<img src="https://gyazo.com/ecec1da7ea6a7db8a63a2fbce66e6a3e" width="100px">
+
 ## Built With
 
 * [Angular](https://angular.io/) - The web framework used
