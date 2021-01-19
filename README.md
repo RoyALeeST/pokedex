@@ -7,6 +7,7 @@ In order to make this project a little different from other projects I added CI/
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+
 You can take a look at the DEMO on this url -> [Pokedex Showcase](https://rlst-pokedex.herokuapp.com/)
 
 To begin tou will see a page like this ![Pokedex_main working](/images/empty_app.PNG)
@@ -74,7 +75,9 @@ Automated Build and deply
 
 * [Angular](https://angular.io/) - The web framework used
 * [Heroku](heroku.com) - Deployment and CI/CD
+
 * [GitHub](github.com) - Source Control
+
 
 ## Contributing
 
