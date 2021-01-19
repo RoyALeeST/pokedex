@@ -59,6 +59,7 @@ ng test
 ## Deployment
 
 It requires a push to the "main" branch where the CI/CD takes place, it will run tests on the server after building the app. Then, the deployment will be done automatically from my Heroku Server.
+You can take a look at the owrking project already deployed on heroku here -> [Pokedex](https://rlst-pokedex.herokuapp.com/)
 
 Auto detect push to "master" branch
 ![Auto Detect push](/images/auto-deployment.PNG)
