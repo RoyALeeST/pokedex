@@ -1,0 +1,16 @@
+<div class="attack-desc-container" *ngIf="moveInfo != null">
+    <div class="top-container">
+        <h1 class="underlined underlined--reverse">{{moveInfo.name | titlecase}}</h1>
+        <p>Hover over the text</p>
+        <div class="attack-description">
+            <p><a href="#" class="underlined underlined--thin">Description: </a></p>
+            <h4  class="underlined underlined--offset">{{moveInfoDesc}}</h4>
+        </div>
+        <div class="underlined underlined--thick  move-info">
+            <h3 class="">Accuraccy: {{moveInfo.accuracy}}</h3>
+            <h3>Damage Class: {{moveInfo.damage_class.name}}</h3>
+            <h3>Power: {{moveInfo.power}}</h3>
+            <h3>PP: {{moveInfo.pp}}</h3>
+        </div>
+    </div>
+</div>

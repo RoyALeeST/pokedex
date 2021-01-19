@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { resourceUsage } from 'process';
 import { Subscription } from 'rxjs';
 import { SearchService } from 'src/app/services/search/search.service';
 
@@ -15,8 +16,14 @@ export class PokemonDescriptionComponent implements OnInit {
   constructor(private searchService: SearchService) { 
     this.subscription = this.searchService.newPokemonSearched$.subscribe((pokemonData) => {
       this.searchService.searchPokemonPokedexEntry(pokemonData.id).subscribe((pokedexEntry)=>{
-        this.pokedexEntry = pokedexEntry.flavor_text_entries[0].flavor_text;
-        console.log(pokedexEntry.flavor_text_entries[0].flavor_text)
+
+        let result = pokedexEntry.flavor_text_entries.find(entry => {          
+          if(entry.language.name == "en"){
+            return true;
+          }
+        })
+        this.pokedexEntry = result.flavor_text;
+
       })
       // this.pokedexEntry = pokemonData
     })

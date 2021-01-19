@@ -13,6 +13,7 @@
   h1{
     text-align: center;
     color: white;
+    font-size: 2vw;
   }
 }
 /*** VARIABLES ***/
@@ -48,6 +49,7 @@ ol.gradient-list {
     min-height: 3rem;
     padding: 1rem 1rem 1rem 3rem;
     position: relative;
+    font-size: 1vw;
     &::before,
     &::after {
       background: linear-gradient(135deg, $blue 0%,$green 100%);
