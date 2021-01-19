@@ -1,4 +1,4 @@
-# Simple Pokedex - By Rodrigo Villalobos
+# Simple Pokedex - By Rodrigo Villalobos 01/18/2021
 
 This project is s simple pokedex app to showcase some Angular concepts in action like Observables and Subscriptions, Routing, Navigation, HTTP Requests, data management and more.
 In order to make this project a little different from other projects I added CI/CD to the deployment pipeline an I decided to publish the app on the internet to showcase this concept.
