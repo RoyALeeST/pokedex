@@ -7,6 +7,22 @@ In order to make this project a little different from other projects I added CI/
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+
+You can take a look at the DEMO on this url -> [Pokedex Showcase](https://rlst-pokedex.herokuapp.com/)
+
+To begin tou will see a page like this ![Pokedex_main working](/images/empty_app.PNG)
+
+Click on the search button to toggle the search box and type the name of any pokemon you like, if you don't know what I'm talking about I recommend you type one of these recommendations:
+-Mudkip
+-Zapdos
+-Torchic
+
+you should see something like this: ![Pokedex_main](/images/main_app_working.PNG)
+
+Click on nay move the pokemon has on his list of moves, pplaced on the left of the page and you will get redirected to this page:
+![Pokedex_move info](/images/move_info_page.PNG)
+
+
 ### Prerequisites
 Basic understanding of CSS and HTML, and good Javascript skills are a plus but not a must.
 
@@ -44,11 +60,24 @@ ng test
 ## Deployment
 
 It requires a push to the "main" branch where the CI/CD takes place, it will run tests on the server after building the app. Then, the deployment will be done automatically from my Heroku Server.
+You can take a look at the owrking project already deployed on heroku here -> [Pokedex](https://rlst-pokedex.herokuapp.com/)
+
+Auto detect push to "master" branch
+![Auto Detect push](/images/auto-deployment.PNG)
+
+Automated Testing
+![Automated testing before deployment](/images/auto-deployment-2.png)
+
+Automated Build and deply
+![Pokedex_move info](/images/auto-deployment-3.png)
 
 ## Built With
 
 * [Angular](https://angular.io/) - The web framework used
 * [Heroku](heroku.com) - Deployment and CI/CD
+
+* [GitHub](github.com) - Source Control
+
 
 ## Contributing
 
