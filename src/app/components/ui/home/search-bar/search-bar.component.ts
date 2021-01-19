@@ -19,7 +19,7 @@ export class SearchBarComponent implements OnInit {
   }
 
   searchPokemon() {
-    this.searchService.searchPokemon(this.pokemonName)
+    this.searchService.searchPokemon(this.pokemonName.toLowerCase())
     .subscribe(
       ()=>{},
       (error)=>{
