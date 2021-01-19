@@ -11,6 +11,13 @@ You can take a look at the DEMO on this url -> [Pokedex Showcase](https://rlst-p
 
 To begin tou will see a page like this ![Pokedex_main](/images/empty_app.PNG)
 
+Click on the search button to toggle the search box and type the name of any pokemon you like, if you don't know what I'm talking about I recommend you type one of these recommendations:
+-Mudkip
+-Zapdos
+-Torchic
+
+you should see something like this: ![Pokedex_main](/images/main_app_working.PNG)
+
 ### Prerequisites
 Basic understanding of CSS and HTML, and good Javascript skills are a plus but not a must.
 
