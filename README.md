@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 You can take a look at the DEMO on this url -> [Pokedex Showcase](https://rlst-pokedex.herokuapp.com/)
 
-To begin tou will see a page like this ![Pokedex_main](/images/empty_app.PNG)
+To begin tou will see a page like this ![Pokedex_main working](/images/empty_app.PNG)
 
 Click on the search button to toggle the search box and type the name of any pokemon you like, if you don't know what I'm talking about I recommend you type one of these recommendations:
 -Mudkip
@@ -17,6 +17,10 @@ Click on the search button to toggle the search box and type the name of any pok
 -Torchic
 
 you should see something like this: ![Pokedex_main](/images/main_app_working.PNG)
+
+Click on nay move the pokemon has on his list of moves, pplaced on the left of the page and you will get redirected to this page:
+![Pokedex_move info](/images/move_info_page.PNG)
+
 
 ### Prerequisites
 Basic understanding of CSS and HTML, and good Javascript skills are a plus but not a must.
@@ -56,7 +60,14 @@ ng test
 
 It requires a push to the "main" branch where the CI/CD takes place, it will run tests on the server after building the app. Then, the deployment will be done automatically from my Heroku Server.
 
-<img src="https://gyazo.com/ecec1da7ea6a7db8a63a2fbce66e6a3e" width="100px">
+Auto detect push to "master" branch
+![Auto Detect push](/images/auto-deployment.PNG)
+
+Automated Testing
+![Automated testing before deployment](/images/auto-deployment-2.PNG)
+
+Automated Build and deply
+![Pokedex_move info](/images/auto-deployment-3.PNG)
 
 ## Built With
 
