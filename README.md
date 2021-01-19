@@ -64,10 +64,10 @@ Auto detect push to "master" branch
 ![Auto Detect push](/images/auto-deployment.PNG)
 
 Automated Testing
-![Automated testing before deployment](/images/auto-deployment-2.PNG)
+![Automated testing before deployment](/images/auto-deployment-2.png)
 
 Automated Build and deply
-![Pokedex_move info](/images/auto-deployment-3.PNG)
+![Pokedex_move info](/images/auto-deployment-3.png)
 
 ## Built With
 
