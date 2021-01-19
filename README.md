@@ -7,6 +7,8 @@ In order to make this project a little different from other projects I added CI/
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+You can take a look at the DEMO on this url -> [Pokedex Showcase](https://rlst-pokedex.herokuapp.com/)
+
 ### Prerequisites
 Basic understanding of CSS and HTML, and good Javascript skills are a plus but not a must.
 
